@@ -1,4 +1,4 @@
-<form action="friendsbook.php" method="post">
+<form action="index.php" method="post">
 Name: <input type="text" name="name">
 <input type="submit" value="Add new friend">
 </form>
@@ -44,7 +44,7 @@ if(isset($_POST['name']) && strlen($_POST['name'])>0){
 }
 ?>
 </ul>
-<form action= "friendsbook.php" method="post">
+<form action= "index.php" method="post">
 <input type="text" name="nameFilter">
 <input type="submit" value="Filter list">
 <input type="checkbox" name="startingWith" value="TRUE">Only names starting with</input>
