@@ -1,8 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<?php
+include("header.php")
+?>
+	<title> My friends book</title>
+</head>
+<body>
+<header>Friend Book</header>
+<br>
 <form action="index.php" method="post">
 Name: <input type="text" name="name">
 <input type="submit" value="Add new friend">
 </form>
-<p>My Best Friends :</p>
 <ul>
 
 <?php
@@ -45,8 +55,16 @@ if(isset($_POST['name']) && strlen($_POST['name'])>0){
 ?>
 </ul>
 <form action= "index.php" method="post">
+	<h1>My best friends:</h1>
 <input type="text" name="nameFilter">
 <input type="submit" value="Filter list">
 <input type="checkbox" name="startingWith" value="TRUE">Only names starting with</input>
 </form>
-
+<br>
+<footer></footer>
+<div></div>
+<?php
+include("footer.php");
+?>
+</body>
+</html>
